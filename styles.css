@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+  --paragraph: #ffffffbf;
+  --bg-head-butt: #f2f2f2;
+  font-size: 15px;
+}
+/* font-family: "Big Shoulders Display", cursive;
+
+font-family: "Lexend Deca", sans-serif; */
+*,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 12px;
+  color: #ffffff;
+}
+body {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  width: 1440px;
+  height: 800px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 950px;
+  align-items: center;
+}
+.column {
+  height: 400px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img img {
+  height: 40px;
+  width: 64px;
+}
+.heading {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.button {
+  align-items: center;
+  border-radius: 25px;
+  border: none;
+  justify-items: center;
+  height: 50px;
+  width: 145px;
+}
+.first-column {
+  background-color: #e28525;
+  border-radius: 12px 0 0 12px;
+}
+.first-column .button a {
+  color: #e28525;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+.second-column {
+  background-color: #016972;
+}
+.second-column .button a {
+  color: #016972;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+.third-column {
+  background-color: #00403f;
+  border-radius: 0 12px 12px 0;
+}
+.third-column .button a {
+  color: #00403f;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media screen and (min-width: 300px) and (max-width: 760px) {
+  body {
+    width: 375px;
+  }
+  .container {
+    grid-template-columns: repeat(1, 3fr);
+    margin-top: 0;
+  }
+  .first-column {
+    border-radius: 12px 12px 0 0;
+  }
+  .third-column {
+    background-color: #00403f;
+    border-radius: 0 0 12px 12px;
+  }
+}
